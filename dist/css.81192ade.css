@@ -1,0 +1,366 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&family=Roboto:wght@100;300;400;500;700;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  border: none;
+  background-color: transparent;
+}
+
+body {
+  background-color: #e6e7e9;
+}
+
+#menu {
+  font-family: "Roboto", sans-serif;
+  position: fixed;
+  top: 115px;
+  right: 50px;
+}
+#menu li {
+  padding: 20px 0;
+  text-align: center;
+}
+#menu li a {
+  color: black;
+}
+
+@keyframes up-down {
+  from {
+    transform: translatey(0px);
+  }
+  to {
+    transform: translatey(-20px);
+  }
+}
+#next_btn {
+  width: 40px;
+  height: 40px;
+  font-size: 60px;
+  position: fixed;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  cursor: pointer;
+  animation: up-down 1.4s infinite ease-in-out alternate;
+}
+#next_btn img {
+  width: 100%;
+  height: 100%;
+}
+
+#fullpage {
+  width: 1280px;
+  height: 720px;
+  margin: 0 auto;
+  background-color: #e6e7e9;
+}
+#fullpage .section#intro {
+  font-family: "Roboto", sans-serif;
+}
+#fullpage .section#intro .slide .container {
+  display: flex;
+  justify-content: space-between;
+}
+#fullpage .section#intro .slide .container .left_area .intro_title {
+  margin-bottom: 50px;
+  font-weight: 500;
+}
+#fullpage .section#intro .slide .container .left_area .intro_title p {
+  font-size: 60px;
+}
+#fullpage .section#intro .slide .container .left_area .intro_subtitle p {
+  font-size: 13px;
+}
+#fullpage .section#intro .slide .container .right_area .intro_name p {
+  font-weight: 100;
+  font-size: 50px;
+}
+#fullpage .section#intro .slide .container .right_area .intro_name span {
+  font-size: 80px;
+  font-weight: 700;
+}
+#fullpage .section#profile .slide .container {
+  display: flex;
+  align-items: center;
+}
+#fullpage .section#profile .slide .container .left_area {
+  width: 800px;
+}
+#fullpage .section#profile .slide .container .left_area .profile_title {
+  margin-bottom: 50px;
+}
+#fullpage .section#profile .slide .container .left_area .profile_title h2 {
+  padding-left: 40px;
+  font-size: 80px;
+}
+#fullpage .section#profile .slide .container .left_area .profiletext_wrap {
+  padding-left: 40px;
+}
+#fullpage .section#profile .slide .container .left_area .profiletext_wrap ul {
+  margin: 50px 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+#fullpage .section#profile .slide .container .left_area .profiletext_wrap ul li {
+  color: #515151;
+  display: flex;
+  align-items: center;
+  width: 252.666667px;
+}
+#fullpage .section#profile .slide .container .left_area .profiletext_wrap ul li:nth-child(4) {
+  margin: 70px 0;
+}
+#fullpage .section#profile .slide .container .left_area .profiletext_wrap ul li .profile_icon {
+  width: 50px;
+  height: 50px;
+  margin-right: 27px;
+}
+#fullpage .section#profile .slide .container .left_area .profiletext_wrap ul li .profile_icon img {
+  width: 100%;
+  height: 100%;
+}
+#fullpage .section#profile .slide .container .left_area .profiletext_wrap ul li .profile_txt {
+  color: #515151;
+}
+#fullpage .section#profile .slide .container .left_area .profiletext_wrap ul li .profile_txt span {
+  font-size: 20px;
+  font-weight: bold;
+}
+#fullpage .section#profile .slide .container .left_area .profiletext_wrap ul li .profile_txt p {
+  margin-top: 10px;
+  font-size: 14px;
+}
+#fullpage .section#profile .slide .container .left_area .profile_license {
+  margin-left: 40px;
+  display: flex;
+  align-items: center;
+}
+#fullpage .section#profile .slide .container .left_area .profile_license .license_icon {
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+  height: 50px;
+}
+#fullpage .section#profile .slide .container .left_area .profile_license .license_icon img {
+  width: 100%;
+  height: 100%;
+}
+#fullpage .section#profile .slide .container .right_area {
+  width: 480px;
+}
+#fullpage .section#profile .slide .container .right_area .profileimg_wrap .profile_background {
+  width: 355px;
+  position: absolute;
+}
+#fullpage .section#profile .slide .container .right_area .profileimg_wrap .profile_background img {
+  width: 100%;
+  height: 100%;
+}
+#fullpage .section#profile .slide .container .right_area .profileimg_wrap .profile_img {
+  width: 300px;
+  height: 300px;
+  background-color: #ccc;
+}
+#fullpage .section#web .container {
+  width: 1280px;
+  height: 720px;
+  position: relative;
+}
+#fullpage .section#web .container .web_maintitle {
+  position: absolute;
+  right: 200px;
+}
+#fullpage .section#web .container .web_maintitle h2 {
+  font-family: "Nanum Myeongjo", serif;
+  font-size: 99px;
+  font-weight: 100;
+}
+#fullpage .section#web .container .web_subtitle {
+  font-family: "Roboto", sans-serif;
+  position: absolute;
+  top: 44px;
+  right: 90px;
+}
+#fullpage .section#web .container .swiper {
+  width: 100%;
+  padding-top: 277px;
+  padding-bottom: 198px;
+}
+#fullpage .section#web .container .swiper .swiper-slide {
+  background-position: center;
+  background-size: cover;
+  width: 300px;
+  height: 300px;
+  margin-right: 10px;
+}
+#fullpage .section#web .container .swiper .swiper-slide img {
+  display: block;
+  width: 100%;
+}
+#fullpage .section#web .container .swiper .swiper-slide .web_sitename {
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 2px solid #dbdbdb;
+  margin-bottom: 10px;
+}
+#fullpage .section#web .container .swiper .swiper-slide .web_sitename p {
+  font-size: 30px;
+  color: #000;
+}
+#fullpage .section#web .container .swiper .swiper-slide .web_sitename a {
+  width: 25px;
+  height: 25px;
+  background-color: white;
+  padding: 10px;
+  border-radius: 50%;
+}
+#fullpage .section#web .container .swiper .swiper-slide .web_sitename a img {
+  width: 100%;
+  height: 100%;
+}
+#fullpage .section#web .container .swiper .swiper-slide .web_link {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-evenly;
+}
+#fullpage .section#web .container .swiper .swiper-slide .web_link .code_link a {
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+  font-size: 15px;
+  background-color: #d9d9d9;
+  color: white;
+  border-radius: 20px;
+  padding: 10px 25px;
+}
+#fullpage .section#web .container .swiper .swiper-slide .github_link a {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-size: 15px;
+  color: #9b9b9b;
+  border: 1px solid #9b9b9b;
+  border-radius: 20px;
+  padding: 10px 25px;
+}
+#fullpage .section#skill .slide .skill_title {
+  text-align: center;
+}
+#fullpage .section#skill .slide .skill_title h2 {
+  font-size: 60px;
+}
+#fullpage .section#skill .slide .skill_box {
+  margin: 30px 0;
+  font-family: "Roboto", sans-serif;
+}
+#fullpage .section#skill .slide .skill_box .swiper-wrapper {
+  transition-timing-function: linear;
+}
+#fullpage .section#skill .slide .skill_box .swiper-wrapper .swiper-slide .skill_inner {
+  width: 250px;
+  height: 200px;
+  position: relative;
+  background-color: white;
+  box-shadow: -3px -3px 7px rgba(255, 255, 255, 0.4509803922), 3px 3px 5px rgba(94, 104, 121, 0.288);
+  border-radius: 20px 20px;
+}
+#fullpage .section#skill .slide .skill_box .swiper-wrapper .swiper-slide .skill_inner .skill_icon {
+  background-color: white;
+  border-radius: 20px;
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  margin: 10px;
+}
+#fullpage .section#skill .slide .skill_box .swiper-wrapper .swiper-slide .skill_inner .skill_icon img {
+  width: 100%;
+  height: 100%;
+}
+#fullpage .section#skill .slide .skill_box .swiper-wrapper .swiper-slide .skill_inner .skill_maintext {
+  position: absolute;
+  top: 30px;
+  right: 55px;
+  font-size: 20px;
+  color: white;
+}
+#fullpage .section#skill .slide .skill_box .swiper-wrapper .swiper-slide .skill_inner .skill_subtext {
+  position: absolute;
+  top: 110px;
+  left: 10px;
+  color: white;
+}
+#fullpage .section#skill .slide .skill_box .swiper-wrapper .swiper-slide .skill_inner .skill_gauge {
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+}
+#fullpage .section#skill .slide .skill_box .swiper-wrapper .swiper-slide .skill_inner .skill_gauge img {
+  width: 100%;
+  height: 100%;
+}
+#fullpage .section#contact {
+  font-family: "Roboto", sans-serif;
+}
+#fullpage .section#contact .container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+#fullpage .section#contact .container .left_area .contact_maintitle h2 {
+  font-size: 110px;
+}
+#fullpage .section#contact .container .left_area .contact_maintitle p {
+  font-size: 25px;
+}
+#fullpage .section#contact .container .left_area .contact_slogan {
+  margin: 40px 0;
+}
+#fullpage .section#contact .container .left_area .contact_slogan p {
+  font-weight: 100;
+  font-size: 65px;
+}
+#fullpage .section#contact .container .left_area .contact_info p {
+  font-weight: 100;
+  font-size: 25px;
+}
+#fullpage .section#contact .container .left_area .contact_github {
+  margin-top: 40px;
+  width: 150px;
+  height: 40px;
+}
+#fullpage .section#contact .container .left_area .contact_github a img {
+  width: 100%;
+  height: 100%;
+}
+#fullpage .section#contact .container .right_area {
+  margin-top: 20px;
+  margin-left: 100px;
+}
+#fullpage .section#contact .container .right_area .contact_profile {
+  width: 300px;
+  height: 300px;
+  background-color: silver;
+  color: white;
+  text-align: center;
+  line-height: 300px;
+  font-size: 40px;
+}
+#fullpage .section#contact .container .right_area .contact_profile img {
+  display: block;
+  width: 100%;
+}
+
+/*# sourceMappingURL=/css.81192ade.css.map */

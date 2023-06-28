@@ -1,0 +1,10 @@
+1. Git 설치 (비트확인)
+2.npm init
+3. npm install parcel index
+4. package.json 열기  -> script 부분수정해주기
+5. "scripts": {
+    "dev": "parcel index.html",
+    "build": "parcel build index.html"
+  }
+
+  ** 오류발생시 scss 설치되있는지 확인
