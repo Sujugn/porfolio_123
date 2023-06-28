@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>INDEX</title>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-
     <link rel="stylesheet" href="./css/index.scss" />
 
     <!--   /*full-page cdn*/ -->
@@ -28,7 +27,8 @@
     />
 
     <!--   /*AOS라이브러리*/ -->
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   </head>
 
   <body>
@@ -251,18 +251,28 @@
               <div class="swiper-wrapper">
                 <div class="swiper-slide">
                   <div class="web_sitename">
-                    <p>WEBSITENAME</p>
+                    <p>Daehanmungu</p>
                     <a href=""
                       ><img src="./image/web-browser.png" alt="기획서바로가기"
                     /></a>
                   </div>
-                  <img src="./image/site_01.png" alt="대한문구 사이트" />
+                  <div class="web_img">
+                    <img src="./image/site_01.png" alt="대한문구 사이트" />
+                  </div>
+                  <div class="web_hover">
+                    <img
+                      class="web_icon"
+                      src="./image/web_icon.png"
+                      alt="웹아이콘"
+                    />
+                    <p>웹사이트 방문</p>
+                  </div>
                   <div class="web_link">
                     <div class="code_link">
-                      <a href="">코드 보기</a>
+                      <button type="button" class="btn hover1">코드보기</button>
                     </div>
                     <div class="github_link">
-                      <a href="">Github</a>
+                      <button type="button" class="btn hover2">Github</button>
                     </div>
                   </div>
                 </div>
@@ -276,10 +286,10 @@
                   <img src="./image/site_02.png" alt="칼하트 사이트" />
                   <div class="web_link">
                     <div class="code_link">
-                      <a href="">코드 보기</a>
+                      <button type="button">코드보기</button>
                     </div>
                     <div class="github_link">
-                      <a href="">Github</a>
+                      <button type="button">Github</button>
                     </div>
                   </div>
                 </div>
@@ -354,7 +364,7 @@
                   </div>
                   <div class="skill_gauge">아이콘</div>
                 </div>
-                <!-- //skill_inner CSS3  iuihju8u-->
+                <!-- //skill_inner CSS3-->
               </div>
               <div class="swiper-slide">
                 <div class="skill_inner skill_html">
@@ -646,11 +656,17 @@
         });
       });
     </script>
-
-    <!-- /* aos라이브러리 */ -->
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
-      AOS.init();
+      AOS.init({
+        // disable on internet explorer
+        disable: function msieversion() {
+          return !!(
+            window.navigator.userAgent.indexOf("MSIE ") > 0 ||
+            navigator.userAgent.match(/Trident.*rv\:11\./)
+          );
+        },
+      });
     </script>
   </body>
 </html>
